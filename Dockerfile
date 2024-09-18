@@ -34,4 +34,4 @@ EXPOSE 8000
 ENV DISPLAY=:99
 
 RUN fc-cache -fv
-CMD python bot.py
+CMD python main.py
