@@ -13,3 +13,9 @@ HOST=127.0.0.1
 PORT=5672
 VIRTUAL_HOST=/
 ```
+
+字体需要挂载：
+
+```
+-v /usr/share/fonts:/usr/share/fonts:ro
+```

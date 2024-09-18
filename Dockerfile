@@ -33,4 +33,5 @@ EXPOSE 8000
 # 设置 Chrome 的环境变量
 ENV DISPLAY=:99
 
+RUN fc-cache -fv
 CMD python bot.py
