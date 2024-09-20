@@ -15,4 +15,6 @@ def get_host_and_port():
 
 
 def get_connection_parameters():
-    return pika.ConnectionParameters(*get_host_and_port(), os.getenv("VIRTUAL_HOST", "/"), get_credentials())
+    return pika.ConnectionParameters(
+        *get_host_and_port(), os.getenv("VIRTUAL_HOST", "/"), get_credentials()
+    )
